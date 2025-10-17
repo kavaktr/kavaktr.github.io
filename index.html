@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    background-color: black;
+}
+@font-face {
+    font-family: terminal;
+    src: url(assets/Terminal.ttf);
+}
+p {
+    font-family: terminal;
+    color: rgb(1, 228, 1);
+}
+    </style>
+</head>
+<body>
+    <p><span id="typed"></span></p>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+  var typed = new Typed('#typed', {
+    strings: ["Connected: kavaktr.com"],
+    typeSpeed: 50,      // Yazma hızı (ms)
+    backSpeed: 30,      // Geri silme hızı
+    backDelay: 1000,    // Silmeden önce bekleme süresi
+    startDelay: 500,    // Başlamadan önce bekleme süresi
+    loop: true          // Döngüde çalışsın mı?
+  });
+</script>
+
+</body>
+</html>
